@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_item_personal"
+        android:icon="@drawable/ic_md_person"
+        android:title="@string/title_personal" /><!--个人信息管理-->
+
+    <item
+        android:id="@+id/nav_item_package"
+        android:icon="@drawable/ic_md_package"
+        android:title="@string/title_package" /><!-- 物流-->
+
+    <item
+        android:id="@+id/nav_item_express"
+        android:icon="@drawable/ic_md_truck"
+        android:title="@string/title_express" /><!-- 物流-->
+
+    <item
+        android:id="@+id/nav_item_settings"
+        android:icon="@drawable/ic_md_hammer"
+        android:title="@string/title_settings" /><!--软件设置-->
+
+</menu>

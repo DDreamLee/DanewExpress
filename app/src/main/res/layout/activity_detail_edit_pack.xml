@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.PackDetailActivity">
+
+    <include
+        android:id="@+id/title_edit"
+        layout="@layout/view_title_detail_edit"></include>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_md_package"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_pack_left_margin"
+        android:paddingEnd="@dimen/detail_pack_right_margin"
+        >
+        <TextView
+            android:id="@+id/packageId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_left_weight"
+            android:text="@string/item_package_packageid"
+            android:textSize="@dimen/detail_pack_text_size"/>
+
+        <TextView
+            android:id="@+id/packageId_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_right_weight"
+            android:hint="@string/item_package_packageid"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_pack_text_size" />
+    </LinearLayout>
+    <include layout="@layout/view_divide_line"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_pack_left_margin"
+        android:paddingEnd="@dimen/detail_pack_right_margin"
+        >
+        <TextView
+            android:id="@+id/SenderPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_left_weight"
+            android:text="@string/item_package_SenderPhone"
+            android:textSize="@dimen/detail_pack_text_size"/>
+
+        <EditText
+            android:id="@+id/SenderPhone_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_right_weight"
+            android:hint="@string/item_package_SenderPhone"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_pack_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_pack_left_margin"
+        android:paddingEnd="@dimen/detail_pack_right_margin"
+        >
+        <TextView
+            android:id="@+id/SenderAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_left_weight"
+            android:text="@string/item_package_detail_SenderAddress"
+            android:textSize="@dimen/detail_pack_text_size"/>
+
+        <EditText
+            android:id="@+id/SenderAddress_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_right_weight"
+            android:hint="@string/item_package_detail_SenderAddress"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_pack_text_size" />
+    </LinearLayout>
+    <include layout="@layout/view_divide_line"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_pack_left_margin"
+        android:paddingEnd="@dimen/detail_pack_right_margin"
+        >
+        <TextView
+            android:id="@+id/ReceiverPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_left_weight"
+            android:text="@string/item_package_ReceiverPhone"
+            android:textSize="@dimen/detail_pack_text_size"/>
+
+        <EditText
+            android:id="@+id/ReceiverPhone_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_right_weight"
+            android:hint="@string/item_package_ReceiverPhone"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_pack_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_pack_left_margin"
+        android:paddingEnd="@dimen/detail_pack_right_margin"
+        >
+        <TextView
+            android:id="@+id/ReceiverAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_left_weight"
+            android:text="@string/item_package_ReceiverAddress"
+            android:textSize="@dimen/detail_pack_text_size"/>
+
+        <EditText
+            android:id="@+id/ReceiverAddress_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_right_weight"
+            android:hint="@string/item_package_ReceiverAddress"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_pack_text_size" />
+    </LinearLayout>
+    <include layout="@layout/view_divide_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_pack_left_margin"
+        android:paddingEnd="@dimen/detail_pack_right_margin"
+        >
+        <TextView
+            android:id="@+id/expenses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_left_weight"
+            android:text="@string/item_package_expenses"
+            android:textSize="@dimen/detail_pack_text_size"/>
+
+        <EditText
+            android:id="@+id/expenses_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_right_weight"
+            android:hint="@string/item_package_expenses"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_pack_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_pack_left_margin"
+        android:paddingEnd="@dimen/detail_pack_right_margin"
+        >
+        <TextView
+            android:id="@+id/PayerPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_left_weight"
+            android:text="@string/item_package_detail_PayerPhone"
+            android:textSize="@dimen/detail_pack_text_size"/>
+
+        <EditText
+            android:id="@+id/PayerPhone_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_right_weight"
+            android:hint="@string/item_package_detail_PayerPhone"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_pack_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_pack_left_margin"
+        android:paddingEnd="@dimen/detail_pack_right_margin"
+        >
+        <TextView
+            android:id="@+id/PaymentStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_left_weight"
+            android:text="@string/item_package_PaymentStatus"
+            android:textSize="@dimen/detail_pack_text_size"/>
+
+        <EditText
+            android:id="@+id/PaymentStatus_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_pack_right_weight"
+            android:hint="@string/item_package_PaymentStatus"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_pack_text_size" />
+    </LinearLayout>
+</LinearLayout>

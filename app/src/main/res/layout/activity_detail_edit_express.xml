@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.ExpressDetailActivity">
+
+    <include
+        android:id="@+id/title_edit"
+        layout="@layout/view_title_detail_edit"></include>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_md_truck"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_express_left_margin"
+        android:paddingEnd="@dimen/detail_express_right_margin"
+        >
+        <TextView
+            android:id="@+id/packageId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_left_weight"
+            android:text="@string/item_express_packid"
+            android:textSize="@dimen/detail_express_text_size"/>
+        <TextView
+            android:id="@+id/packageId_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_right_weight"
+            android:hint="@string/item_express_packid"
+            android:textSize="@dimen/detail_express_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_express_left_margin"
+        android:paddingEnd="@dimen/detail_express_right_margin">
+
+        <TextView
+            android:id="@+id/startAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_left_weight"
+            android:text="@string/item_express_startAddress"
+            android:textSize="@dimen/detail_express_text_size" />
+
+        <TextView
+            android:id="@+id/startAddress_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_right_weight"
+            android:hint="@string/item_express_startAddress"
+            android:textSize="@dimen/detail_express_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_express_left_margin"
+        android:paddingEnd="@dimen/detail_express_right_margin">
+
+        <TextView
+            android:id="@+id/endAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_left_weight"
+            android:text="@string/item_express_endAddress"
+            android:textSize="@dimen/detail_express_text_size" />
+
+        <TextView
+            android:id="@+id/endAddress_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_right_weight"
+            android:hint="@string/item_express_endAddress"
+            android:textSize="@dimen/detail_express_text_size" />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_express_left_margin"
+        android:paddingEnd="@dimen/detail_express_right_margin"
+        >
+        <TextView
+            android:id="@+id/nowAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_left_weight"
+            android:text="@string/item_express_nowAddress"
+            android:textSize="@dimen/detail_express_text_size"/>
+
+        <EditText
+            android:id="@+id/nowAddress_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_right_weight"
+            android:hint="@string/item_express_nowAddress"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_express_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_express_left_margin"
+        android:paddingEnd="@dimen/detail_express_right_margin"
+        >
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_left_weight"
+            android:text="@string/item_express_time"
+            android:textSize="@dimen/detail_express_text_size"/>
+
+        <TextView
+            android:id="@+id/time_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_right_weight"
+            android:hint="@string/item_express_time"
+            android:textSize="@dimen/detail_express_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/view_divide_line"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_express_left_margin"
+        android:paddingEnd="@dimen/detail_express_right_margin"
+        >
+        <TextView
+            android:id="@+id/expressmanId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_left_weight"
+            android:text="@string/item_express_detail_expressmanId"
+            android:textSize="@dimen/detail_express_text_size"/>
+
+        <EditText
+            android:id="@+id/expressmanId_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_right_weight"
+            android:hint="@string/item_express_detail_expressmanId"
+            android:textColor="#000000"
+            android:textSize="@dimen/detail_express_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_express_left_margin"
+        android:paddingEnd="@dimen/detail_express_right_margin"
+        >
+        <TextView
+            android:id="@+id/expressmanName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_left_weight"
+            android:text="@string/item_express_detail_expressmanName"
+            android:textSize="@dimen/detail_express_text_size"/>
+
+        <TextView
+            android:id="@+id/expressmanName_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_right_weight"
+            android:hint="@string/item_express_detail_expressmanName"
+            android:textSize="@dimen/detail_express_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/detail_express_left_margin"
+        android:paddingEnd="@dimen/detail_express_right_margin"
+        >
+        <TextView
+            android:id="@+id/expressmanPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_left_weight"
+            android:text="@string/item_express_detail_expressmanPhone"
+            android:textSize="@dimen/detail_express_text_size"/>
+
+        <TextView
+            android:id="@+id/expressmanPhone_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/detail_express_right_weight"
+            android:hint="@string/item_express_detail_expressmanPhone"
+            android:textSize="@dimen/detail_express_text_size" />
+    </LinearLayout>
+</LinearLayout>

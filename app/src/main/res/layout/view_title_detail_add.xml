@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <Button
+        android:id="@+id/title_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/title_back"
+        android:textColor="@color/btn_text"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_detail_add"
+        android:textColor="@color/btn_text"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/title_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/title_prompt_add"
+        android:textColor="@color/btn_text" />
+</LinearLayout>
